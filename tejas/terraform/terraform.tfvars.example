@@ -1,0 +1,23 @@
+# ==========================================================================
+# Tejas -- Terraform Variables Example
+# ==========================================================================
+# Copy to terraform.tfvars and fill in your values:
+#   cp terraform.tfvars.example terraform.tfvars
+#
+# NEVER commit terraform.tfvars to version control — it is in .gitignore.
+# ==========================================================================
+
+project_id         = "your-gcp-project-id"
+region             = "us-central1"
+firestore_location = "nam5"
+environment        = "production"
+min_instances      = 0
+max_instances      = 10
+cpu_limit          = "2"
+memory_limit       = "1Gi"
+
+# Leave blank on initial apply.
+# After terraform apply, run: terraform output frontend_url
+# Then re-apply with the actual frontend URL to lock down CORS:
+#   terraform apply -var="frontend_url=https://tejas-frontend-HASH-uc.a.run.app"
+frontend_url = ""

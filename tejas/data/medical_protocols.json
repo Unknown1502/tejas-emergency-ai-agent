@@ -1,0 +1,370 @@
+[
+  {
+    "condition": "hemorrhage_severe",
+    "severity": "critical",
+    "title": "Severe Hemorrhage -- Uncontrolled Bleeding",
+    "steps": [
+      "Apply direct pressure with sterile dressing or cleanest available material",
+      "If wound is on extremity and direct pressure fails, apply commercial tourniquet 2-3 inches above wound",
+      "Note the time of tourniquet application and mark 'TQ' with time on patient forehead or tourniquet",
+      "If no tourniquet available, pack wound tightly with gauze and apply maximum pressure",
+      "Elevate the bleeding extremity above heart level if possible",
+      "Do NOT remove initial dressing -- add additional layers on top",
+      "Monitor for signs of shock: pale skin, rapid breathing, confusion",
+      "Keep victim warm with blanket or coat"
+    ],
+    "contraindications": [
+      "Do NOT apply tourniquet to neck, chest, or abdomen",
+      "Do NOT remove embedded objects -- stabilize them in place",
+      "Do NOT give food or water to victim with severe bleeding",
+      "Do NOT apply tourniquet directly over a joint"
+    ],
+    "equipment_needed": [
+      "Sterile gauze or clean cloth",
+      "Commercial tourniquet (CAT, SOF-T, or improvised)",
+      "Hemostatic gauze if available (QuikClot, Celox)",
+      "Blanket for shock prevention"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 5,
+    "triage_category": "immediate"
+  },
+  {
+    "condition": "hemorrhage_moderate",
+    "severity": "urgent",
+    "title": "Moderate Hemorrhage -- Controllable Bleeding",
+    "steps": [
+      "Apply firm, direct pressure with sterile gauze or cleanest available cloth",
+      "Maintain constant pressure for minimum 10 minutes without checking",
+      "If bleeding soaks through, add more material on top -- do NOT remove first layer",
+      "Once bleeding slows, apply pressure bandage to maintain compression",
+      "Elevate injured area above heart level",
+      "Monitor wound for continued bleeding every 5 minutes",
+      "Clean wound edges if visible debris, but do not probe wound",
+      "Prepare for transport to medical facility"
+    ],
+    "contraindications": [
+      "Do NOT apply tourniquet for controllable bleeding",
+      "Do NOT use hydrogen peroxide on wound (damages tissue)",
+      "Do NOT remove bandage to check wound frequently"
+    ],
+    "equipment_needed": [
+      "Sterile gauze pads",
+      "Elastic bandage or pressure wrap",
+      "Medical tape"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 15,
+    "triage_category": "delayed"
+  },
+  {
+    "condition": "fracture_severe",
+    "severity": "urgent",
+    "title": "Severe Fracture -- Open or Compound Fracture",
+    "steps": [
+      "Control any bleeding first -- apply pressure around (not on) the fracture site",
+      "Do NOT attempt to push bone back into place",
+      "Immobilize the fracture by splinting the joint above and below the break",
+      "Use rigid material for splinting: board, rolled magazine, or SAM splint",
+      "Pad the splint with soft material to prevent pressure sores",
+      "Check circulation below the splint every 10 minutes (pulse, color, sensation)",
+      "Cover any open wound with sterile moist dressing",
+      "Apply cold pack wrapped in cloth to reduce swelling (20 minutes on, 20 off)",
+      "Treat for shock: lay flat, elevate legs if no spinal injury suspected"
+    ],
+    "contraindications": [
+      "Do NOT move the victim unless in immediate danger",
+      "Do NOT attempt to realign the bone",
+      "Do NOT splint too tightly -- must maintain circulation",
+      "Do NOT apply ice directly to skin"
+    ],
+    "equipment_needed": [
+      "Rigid splinting material",
+      "Padding material (clothing, towels)",
+      "Roller bandage or tape for securing splint",
+      "Sterile dressing for open wounds",
+      "Cold pack"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 20,
+    "triage_category": "delayed"
+  },
+  {
+    "condition": "burn_severe",
+    "severity": "critical",
+    "title": "Severe Burns -- Second or Third Degree",
+    "steps": [
+      "Ensure scene safety -- remove heat source or move victim from danger",
+      "Stop the burning process: cool with clean, room-temperature water for 20 minutes",
+      "Remove clothing and jewelry near the burn unless stuck to skin",
+      "Cover burn loosely with sterile non-adhesive dressing or clean cling wrap",
+      "Do NOT apply ice, butter, toothpaste, or any home remedies",
+      "For chemical burns: brush off dry chemicals first, then irrigate with water",
+      "Elevate burned extremities above heart level",
+      "Monitor airway -- facial burns or smoke inhalation may cause swelling",
+      "Treat for shock: keep warm, lay flat, elevate legs",
+      "Calculate burn size: victim palm equals approximately 1% body surface area"
+    ],
+    "contraindications": [
+      "Do NOT apply ice or ice water -- causes further tissue damage",
+      "Do NOT break blisters",
+      "Do NOT remove clothing stuck to burn",
+      "Do NOT apply adhesive bandages directly to burn",
+      "Do NOT use cotton or fluffy material on burns"
+    ],
+    "equipment_needed": [
+      "Clean water source",
+      "Non-adhesive sterile dressings or cling wrap",
+      "Sterile saline if available",
+      "Blanket for shock prevention"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 10,
+    "triage_category": "immediate"
+  },
+  {
+    "condition": "cardiac_arrest",
+    "severity": "critical",
+    "title": "Cardiac Arrest -- No Pulse, Not Breathing",
+    "steps": [
+      "Confirm unresponsiveness: tap shoulders and shout",
+      "Call for AED immediately",
+      "Place victim on firm, flat surface",
+      "Begin chest compressions: center of chest, 2 inches deep, 100-120 per minute",
+      "Allow full chest recoil between compressions",
+      "If trained: give 2 rescue breaths after every 30 compressions",
+      "If untrained: hands-only CPR -- continuous compressions without stopping",
+      "If AED arrives: turn on, follow voice prompts, apply pads, stand clear for analysis",
+      "Switch compressors every 2 minutes to maintain quality",
+      "Continue CPR until professional responders arrive or victim shows signs of life",
+      "Do NOT stop CPR to check for pulse -- minimize interruptions"
+    ],
+    "contraindications": [
+      "Do NOT delay CPR to look for equipment",
+      "Do NOT compress over the xiphoid process (bottom of sternum)",
+      "Do NOT perform rescue breathing if you suspect toxic gas exposure",
+      "Do NOT stop CPR unless victim is clearly reviving or you are physically unable to continue"
+    ],
+    "equipment_needed": [
+      "AED (Automated External Defibrillator) if available",
+      "CPR barrier mask if available",
+      "Firm flat surface"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 1,
+    "triage_category": "immediate"
+  },
+  {
+    "condition": "concussion",
+    "severity": "moderate",
+    "title": "Concussion -- Suspected Traumatic Brain Injury",
+    "steps": [
+      "Keep victim still -- do NOT let them return to activity",
+      "Monitor level of consciousness using AVPU scale (Alert, Voice, Pain, Unresponsive)",
+      "Check pupils: both should be equal size and reactive to light",
+      "Ask orientation questions: name, date, location, what happened",
+      "Monitor for danger signs: worsening headache, repeated vomiting, seizures",
+      "If victim is conscious, keep them sitting upright to reduce intracranial pressure",
+      "Apply cold pack to any external head injury",
+      "Do NOT give aspirin or blood-thinning medications",
+      "If victim becomes unconscious, place in recovery position and monitor airway",
+      "Document the time of injury and any changes in mental status"
+    ],
+    "contraindications": [
+      "Do NOT allow victim to sleep unsupervised for 24 hours",
+      "Do NOT give aspirin or ibuprofen (may increase bleeding risk)",
+      "Do NOT move victim if spinal injury is suspected",
+      "Do NOT apply direct pressure to a skull fracture"
+    ],
+    "equipment_needed": [
+      "Penlight for pupil check",
+      "Cold pack",
+      "Cervical collar if available"
+    ],
+    "time_critical": false,
+    "max_response_minutes": 30,
+    "triage_category": "delayed"
+  },
+  {
+    "condition": "choking",
+    "severity": "critical",
+    "title": "Choking -- Complete Airway Obstruction",
+    "steps": [
+      "Ask the victim: 'Are you choking?' -- if they cannot speak, cough, or breathe, act immediately",
+      "Stand behind the victim and wrap arms around their waist",
+      "Make a fist with one hand and place it just above the navel",
+      "Grasp your fist with the other hand",
+      "Deliver quick, upward abdominal thrusts (Heimlich maneuver)",
+      "Continue thrusts until object is expelled or victim becomes unconscious",
+      "If victim becomes unconscious: lower to ground, begin CPR, check mouth for object before breaths",
+      "For pregnant or obese victims: perform chest thrusts instead of abdominal thrusts",
+      "For infants under 1 year: 5 back blows followed by 5 chest thrusts"
+    ],
+    "contraindications": [
+      "Do NOT perform blind finger sweeps",
+      "Do NOT perform abdominal thrusts on infants",
+      "Do NOT slap adult victim on back while standing (may worsen obstruction)"
+    ],
+    "equipment_needed": [
+      "None required -- manual technique"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 1,
+    "triage_category": "immediate"
+  },
+  {
+    "condition": "hypothermia",
+    "severity": "urgent",
+    "title": "Hypothermia -- Core Temperature Below 95F / 35C",
+    "steps": [
+      "Move victim to warm, dry environment if possible",
+      "Remove any wet clothing -- cut off if necessary",
+      "Wrap victim in dry blankets, sleeping bag, or emergency blanket -- insulate from ground",
+      "Cover the head to prevent heat loss",
+      "Apply warm packs to neck, armpits, and groin (major blood vessels)",
+      "If conscious and able to swallow: give warm, sweet drinks (NO alcohol or caffeine)",
+      "Handle victim gently -- rough movement can trigger cardiac arrest in severe hypothermia",
+      "Monitor breathing and pulse -- be prepared for CPR",
+      "If victim is unconscious, place in recovery position",
+      "Rewarm gradually -- do NOT use hot water or direct heat"
+    ],
+    "contraindications": [
+      "Do NOT give alcohol -- it dilates blood vessels and increases heat loss",
+      "Do NOT rub or massage extremities",
+      "Do NOT use direct heat sources (fire, heating pad) on skin",
+      "Do NOT place victim in hot water"
+    ],
+    "equipment_needed": [
+      "Dry blankets or sleeping bag",
+      "Emergency space blanket",
+      "Warm packs or hot water bottles (wrapped in cloth)",
+      "Warm sweet beverages"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 15,
+    "triage_category": "delayed"
+  },
+  {
+    "condition": "spinal_injury",
+    "severity": "critical",
+    "title": "Suspected Spinal Cord Injury",
+    "steps": [
+      "Do NOT move the victim unless in immediate life-threatening danger",
+      "Stabilize the head and neck in the position found -- use hands on both sides",
+      "Instruct the victim to remain completely still",
+      "Assess sensation and movement: ask victim to wiggle fingers and toes",
+      "Check for numbness, tingling, or inability to move extremities",
+      "If victim must be moved, use log-roll technique with minimum 3 rescuers",
+      "Maintain manual in-line stabilization throughout any movement",
+      "Apply cervical collar if available and trained to do so",
+      "Monitor airway -- jaw thrust without head tilt if breathing support needed",
+      "Treat other injuries while maintaining spinal immobilization"
+    ],
+    "contraindications": [
+      "Do NOT flex, extend, or rotate the spine",
+      "Do NOT sit the victim up",
+      "Do NOT remove helmet unless airway access required",
+      "Do NOT use head-tilt chin-lift for airway -- use jaw thrust only"
+    ],
+    "equipment_needed": [
+      "Cervical collar if available",
+      "Backboard for transport if available",
+      "Towels or blankets rolled for lateral stabilization",
+      "Tape for securing head"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 5,
+    "triage_category": "immediate"
+  },
+  {
+    "condition": "anaphylaxis",
+    "severity": "critical",
+    "title": "Anaphylaxis -- Severe Allergic Reaction",
+    "steps": [
+      "Identify signs: hives, facial swelling, throat tightness, difficulty breathing, drop in blood pressure",
+      "If victim has an epinephrine auto-injector: assist with administration to outer thigh",
+      "Hold auto-injector in place for 10 seconds",
+      "Position victim: sitting up if having difficulty breathing, flat if showing signs of shock",
+      "If both breathing difficulty AND shock: position at 45 degrees (compromise position)",
+      "Monitor airway continuously -- be prepared for swelling to worsen",
+      "If no improvement in 5-15 minutes, a second dose of epinephrine may be needed",
+      "Begin CPR if victim becomes unresponsive and stops breathing",
+      "Note time of epinephrine administration for medical team",
+      "Keep victim warm and calm"
+    ],
+    "contraindications": [
+      "Do NOT delay epinephrine administration if available",
+      "Do NOT give oral medications if airway is swelling",
+      "Do NOT leave victim alone -- rapid deterioration possible",
+      "Do NOT force victim to lie flat if they are struggling to breathe"
+    ],
+    "equipment_needed": [
+      "Epinephrine auto-injector (EpiPen or similar)",
+      "Supplemental oxygen if available"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 2,
+    "triage_category": "immediate"
+  },
+  {
+    "condition": "seizure",
+    "severity": "urgent",
+    "title": "Active Seizure Management",
+    "steps": [
+      "Note the time the seizure started",
+      "Clear the area around the victim of hard or sharp objects",
+      "Place something soft under the head if possible",
+      "Do NOT restrain the victim or hold them down",
+      "Do NOT put anything in the victim's mouth",
+      "Roll victim onto their side (recovery position) once convulsions stop",
+      "Check airway and breathing after seizure ends",
+      "Stay with the victim until they are fully conscious and oriented",
+      "If seizure lasts longer than 5 minutes, this is a medical emergency (status epilepticus)",
+      "Document seizure duration and type of movements for medical responders"
+    ],
+    "contraindications": [
+      "Do NOT restrain the victim during a seizure",
+      "Do NOT put objects in the mouth -- they cannot swallow their tongue",
+      "Do NOT give food or water until fully alert",
+      "Do NOT attempt to move the victim during active seizure unless in danger"
+    ],
+    "equipment_needed": [
+      "Soft padding for under head",
+      "Timing device (watch, phone)"
+    ],
+    "time_critical": false,
+    "max_response_minutes": 10,
+    "triage_category": "delayed"
+  },
+  {
+    "condition": "smoke_inhalation",
+    "severity": "critical",
+    "title": "Smoke Inhalation Injury",
+    "steps": [
+      "Remove victim from smoke-filled environment to fresh air immediately",
+      "Assess breathing: look for soot around nose/mouth, singed nasal hair, hoarse voice",
+      "Administer high-flow oxygen if available (15 L/min via non-rebreather mask)",
+      "Position victim sitting upright to ease breathing",
+      "Monitor for delayed airway swelling -- can occur hours after exposure",
+      "If victim is not breathing, begin rescue breathing with barrier device",
+      "Watch for stridor (high-pitched breathing sound) indicating airway narrowing",
+      "Remove contaminated clothing to prevent continued chemical absorption",
+      "Keep victim warm and calm",
+      "Be prepared for rapid deterioration -- airway can swell shut quickly"
+    ],
+    "contraindications": [
+      "Do NOT re-enter smoke-filled area without proper SCBA",
+      "Do NOT give mouth-to-mouth without barrier device (carbon monoxide transfer risk)",
+      "Do NOT assume victim is fine -- delayed symptoms are common",
+      "Do NOT give water if victim is having difficulty swallowing"
+    ],
+    "equipment_needed": [
+      "Supplemental oxygen and delivery device",
+      "Barrier mask for rescue breathing",
+      "Blanket for warmth"
+    ],
+    "time_critical": true,
+    "max_response_minutes": 3,
+    "triage_category": "immediate"
+  }
+]

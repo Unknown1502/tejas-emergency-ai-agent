@@ -1,0 +1,167 @@
+# ==========================================================================
+# Tejas -- Cloud Build Configuration
+#
+# Automated build and deploy pipeline for Google Cloud Build.
+#
+# Trigger this build with:
+#   gcloud builds submit --config=cloudbuild.yaml .
+#
+# Or configure a trigger from a Git repository.
+# ==========================================================================
+
+steps:
+  # Step 1: Run unit tests BEFORE building the image
+  # A failing test gates the entire pipeline — no broken code ships.
+  - name: "python:3.12-slim"
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        cd backend
+        pip install --quiet -r requirements.txt
+        python -m pytest tests/ -v --tb=short --no-header \
+          --ignore=tests/test_main.py \
+          -n auto
+    id: "run-tests"
+
+  # Step 2: Build the backend container image
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "-t"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/backend:${SHORT_SHA}"
+      - "-t"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/backend:latest"
+      - "backend/"
+    id: "build-backend"
+    waitFor:
+      - "run-tests"
+
+  # Step 2: Push the backend image to Artifact Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "push"
+      - "--all-tags"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/backend"
+    id: "push-backend"
+    waitFor:
+      - "build-backend"
+
+  # Step 3: Deploy to Cloud Run
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: "gcloud"
+    args:
+      - "run"
+      - "deploy"
+      - "tejas-backend"
+      - "--image"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/backend:${SHORT_SHA}"
+      - "--region"
+      - "${_REGION}"
+      - "--platform"
+      - "managed"
+      - "--allow-unauthenticated"
+      - "--port"
+      - "8080"
+      - "--cpu"
+      - "2"
+      - "--memory"
+      - "1Gi"
+      - "--timeout"
+      - "3600"
+      - "--session-affinity"
+      - "--min-instances"
+      - "0"
+      - "--max-instances"
+      - "10"
+      - "--set-env-vars"
+      - "ENVIRONMENT=production,GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${_REGION},USE_VERTEX_AI=true,GCS_BUCKET_NAME=${PROJECT_ID}-tejas-captures,ALLOWED_ORIGINS=[\"${_FRONTEND_URL}\",\"http://localhost:5173\"]"
+    id: "deploy-backend"
+    waitFor:
+      - "push-backend"
+
+  # Step 4: Build the frontend
+  # Injects VITE_WS_URL so the React app connects directly to the backend
+  # Cloud Run service URL (bypassing nginx proxy when on different domains).
+  - name: "node:20-slim"
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        cd frontend
+        npm ci --ignore-scripts
+        VITE_WS_URL="${_BACKEND_WSS_URL}" npm run build
+    id: "build-frontend"
+
+  # Step 5: Build and push the frontend container
+  # Passes BACKEND_URL so nginx can proxy /ws/ and /api/ to the backend at runtime.
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "-t"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/frontend:${SHORT_SHA}"
+      - "-t"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/frontend:latest"
+      - "--build-arg"
+      - "VITE_WS_URL=${_BACKEND_WSS_URL}"
+      - "frontend/"
+    id: "build-frontend-image"
+    waitFor:
+      - "build-frontend"
+
+  # Step 6: Push frontend image
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "push"
+      - "--all-tags"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/frontend"
+    id: "push-frontend"
+    waitFor:
+      - "build-frontend-image"
+
+  # Step 7: Deploy frontend to Cloud Run
+  # BACKEND_URL is set so envsubst in the nginx entrypoint wires up the proxy.
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: "gcloud"
+    args:
+      - "run"
+      - "deploy"
+      - "tejas-frontend"
+      - "--image"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/frontend:${SHORT_SHA}"
+      - "--region"
+      - "${_REGION}"
+      - "--platform"
+      - "managed"
+      - "--allow-unauthenticated"
+      - "--port"
+      - "80"
+      - "--set-env-vars"
+      - "BACKEND_URL=${_BACKEND_URL}"
+    id: "deploy-frontend"
+    waitFor:
+      - "push-frontend"
+
+# Substitutions
+substitutions:
+  _REGION: "us-central1"
+  # Backend Cloud Run HTTPS URL — update after first deploy:
+  #   gcloud run services describe tejas-backend --region=us-central1 --format='value(status.url)'
+  _BACKEND_URL: "https://tejas-backend-placeholder-uc.a.run.app"
+  # Derived WSS URL for VITE_WS_URL (https → wss)
+  _BACKEND_WSS_URL: "wss://tejas-backend-placeholder-uc.a.run.app/ws/stream"
+  # Frontend Cloud Run HTTPS URL — update after first frontend deploy for CORS
+  _FRONTEND_URL: "https://tejas-frontend-placeholder-uc.a.run.app"
+
+# Build options
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: "E2_HIGHCPU_8"
+
+# Images to be pushed
+images:
+  - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/backend"
+  - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/tejas/frontend"
+
+# Timeout for the entire build
+timeout: "1800s"

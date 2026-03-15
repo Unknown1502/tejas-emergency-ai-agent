@@ -1,0 +1,655 @@
+[
+  {
+    "un_number": "UN1203",
+    "chemical_name": "Gasoline",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 128,
+    "safe_distance_ft": 300,
+    "ppe_required": [
+      "Self-Contained Breathing Apparatus (SCBA)",
+      "Chemical-resistant suit",
+      "Nitrile gloves"
+    ],
+    "immediate_actions": [
+      "Eliminate all ignition sources within 300 feet",
+      "Evacuate downwind personnel immediately",
+      "Do not attempt to extinguish unless trained",
+      "Contain spill with absorbent material if safe to do so"
+    ],
+    "first_aid": [
+      "Move victim to fresh air immediately",
+      "If not breathing, begin CPR",
+      "Remove contaminated clothing",
+      "Flush skin with water for at least 20 minutes"
+    ],
+    "fire_response": "Use dry chemical, CO2, or alcohol-resistant foam. Water may be ineffective.",
+    "spill_response": "Eliminate ignition sources. Absorb with earth or sand. Prevent entry into sewers."
+  },
+  {
+    "un_number": "UN1017",
+    "chemical_name": "Chlorine",
+    "hazard_class": "Toxic Gas",
+    "guide_number": 124,
+    "safe_distance_ft": 1500,
+    "ppe_required": [
+      "Level A Hazmat Suit",
+      "Self-Contained Breathing Apparatus (SCBA)",
+      "Chemical-resistant boots"
+    ],
+    "immediate_actions": [
+      "Evacuate area -- minimum 1500 feet in all directions",
+      "Move upwind immediately",
+      "Do NOT apply water directly to leak",
+      "Isolate spill area and restrict access"
+    ],
+    "first_aid": [
+      "Move victim to fresh air immediately",
+      "If breathing difficulty, administer oxygen",
+      "Remove contaminated clothing",
+      "If eyes exposed, flush with water for 15 minutes"
+    ],
+    "fire_response": "Chlorine is not flammable but supports combustion. Use water spray to reduce vapors.",
+    "spill_response": "Do not direct water at source. Use fine water spray to knock down vapors."
+  },
+  {
+    "un_number": "UN1005",
+    "chemical_name": "Ammonia (Anhydrous)",
+    "hazard_class": "Toxic Gas, Corrosive",
+    "guide_number": 125,
+    "safe_distance_ft": 1000,
+    "ppe_required": [
+      "Level A or B Hazmat Suit",
+      "Self-Contained Breathing Apparatus (SCBA)",
+      "Chemical-resistant gloves"
+    ],
+    "immediate_actions": [
+      "Evacuate area -- minimum 1000 feet",
+      "Stay upwind",
+      "Ammonia is lighter than air and rises",
+      "Isolate the area and deny entry"
+    ],
+    "first_aid": [
+      "Move victim to fresh air",
+      "If not breathing, begin artificial respiration",
+      "Flush contaminated skin with large amounts of water",
+      "If eyes exposed, irrigate with water for 15 minutes minimum"
+    ],
+    "fire_response": "Ammonia containers may rocket if heated. Cool containers with water from maximum distance.",
+    "spill_response": "Use fine water spray to absorb vapors. Do not direct water into liquid ammonia."
+  },
+  {
+    "un_number": "UN1075",
+    "chemical_name": "Propane",
+    "hazard_class": "Flammable Gas",
+    "guide_number": 115,
+    "safe_distance_ft": 500,
+    "ppe_required": [
+      "Self-Contained Breathing Apparatus (SCBA)",
+      "Structural firefighting gear",
+      "Thermal protection"
+    ],
+    "immediate_actions": [
+      "Eliminate all ignition sources within 500 feet",
+      "Propane vapor is heavier than air -- collects in low areas",
+      "Evacuate downhill and downwind",
+      "Close cylinder valve if safe to do so"
+    ],
+    "first_aid": [
+      "Move victim to fresh air",
+      "Administer oxygen if breathing difficulty",
+      "Treat frostbite if exposure to liquid propane",
+      "Begin CPR if not breathing"
+    ],
+    "fire_response": "Do not extinguish unless leak can be stopped. Cool containers with water from distance.",
+    "spill_response": "Stop leak if possible without risk. Ventilate area. Keep out of low areas."
+  },
+  {
+    "un_number": "UN2794",
+    "chemical_name": "Battery Acid (Sulfuric Acid)",
+    "hazard_class": "Corrosive",
+    "guide_number": 137,
+    "safe_distance_ft": 150,
+    "ppe_required": [
+      "Acid-resistant suit",
+      "Face shield and safety goggles",
+      "Acid-resistant gloves",
+      "Respiratory protection"
+    ],
+    "immediate_actions": [
+      "Isolate spill area",
+      "Do not touch spilled material",
+      "Neutralize small spills with baking soda or lime",
+      "Prevent runoff from entering drains or waterways"
+    ],
+    "first_aid": [
+      "Flush skin with water for at least 30 minutes",
+      "Remove contaminated clothing while flushing",
+      "If swallowed, do NOT induce vomiting",
+      "Flush eyes with water for at least 30 minutes"
+    ],
+    "fire_response": "Acid is not flammable. Water spray may produce toxic fumes. Use dry chemical.",
+    "spill_response": "Absorb with dry earth or sand. Neutralize with soda ash. Do not use sawdust."
+  },
+  {
+    "un_number": "UN1090",
+    "chemical_name": "Acetone",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 127,
+    "safe_distance_ft": 200,
+    "ppe_required": [
+      "Chemical splash goggles",
+      "Organic vapor respirator",
+      "Nitrile gloves",
+      "Fire-resistant clothing"
+    ],
+    "immediate_actions": [
+      "Eliminate ignition sources within 200 feet",
+      "Ventilate the area",
+      "Acetone vapors are heavier than air",
+      "Prevent entry into confined spaces"
+    ],
+    "first_aid": [
+      "Move to fresh air if inhaled",
+      "Flush eyes with water for 15 minutes",
+      "Wash skin with soap and water",
+      "If ingested, do not induce vomiting -- seek medical attention"
+    ],
+    "fire_response": "Use alcohol-resistant foam, dry chemical, or CO2. Water spray may be ineffective.",
+    "spill_response": "Absorb with inert material. Ventilate area. Prevent entry into sewers."
+  },
+  {
+    "un_number": "UN1263",
+    "chemical_name": "Paint (Flammable)",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 128,
+    "safe_distance_ft": 150,
+    "ppe_required": [
+      "Organic vapor respirator",
+      "Chemical splash goggles",
+      "Nitrile gloves"
+    ],
+    "immediate_actions": [
+      "Eliminate ignition sources",
+      "Ventilate the area",
+      "Contain spill with absorbent material",
+      "Avoid breathing vapors"
+    ],
+    "first_aid": [
+      "Move to fresh air",
+      "Flush eyes with water for 15 minutes",
+      "Wash skin with soap and water",
+      "If ingested, do not induce vomiting"
+    ],
+    "fire_response": "Use dry chemical, CO2, or alcohol-resistant foam.",
+    "spill_response": "Contain with absorbent material. Prevent entry into waterways."
+  },
+  {
+    "un_number": "UN1993",
+    "chemical_name": "Diesel Fuel",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 128,
+    "safe_distance_ft": 200,
+    "ppe_required": [
+      "Chemical splash goggles",
+      "Nitrile gloves",
+      "Flame-resistant clothing"
+    ],
+    "immediate_actions": [
+      "Eliminate ignition sources within 200 feet",
+      "Contain spill if safe",
+      "Prevent entry into drains and waterways",
+      "Ventilate enclosed areas"
+    ],
+    "first_aid": [
+      "Move to fresh air",
+      "Flush eyes with water for 15 minutes",
+      "Wash skin with soap and water",
+      "If ingested, do not induce vomiting"
+    ],
+    "fire_response": "Use dry chemical, foam, or CO2. Water fog can be used for cooling.",
+    "spill_response": "Absorb with earth, sand, or commercial absorbent. Prevent waterway contamination."
+  },
+  {
+    "un_number": "UN1789",
+    "chemical_name": "Hydrochloric Acid",
+    "hazard_class": "Corrosive",
+    "guide_number": 157,
+    "safe_distance_ft": 300,
+    "ppe_required": [
+      "Acid-resistant suit",
+      "Self-Contained Breathing Apparatus (SCBA)",
+      "Acid-resistant gloves and boots",
+      "Face shield"
+    ],
+    "immediate_actions": [
+      "Evacuate area -- minimum 300 feet",
+      "Stay upwind",
+      "Do not touch spilled material",
+      "Isolate area and deny entry"
+    ],
+    "first_aid": [
+      "Move to fresh air immediately",
+      "Flush skin with water for 20 minutes",
+      "Flush eyes with water for 30 minutes",
+      "If inhaled, administer oxygen"
+    ],
+    "fire_response": "Not flammable. May produce toxic chlorine gas when heated. Use water spray to cool containers.",
+    "spill_response": "Neutralize with soda ash or lime. Absorb residue with dry material."
+  },
+  {
+    "un_number": "UN1072",
+    "chemical_name": "Oxygen (Compressed)",
+    "hazard_class": "Oxidizer, Non-flammable Gas",
+    "guide_number": 122,
+    "safe_distance_ft": 500,
+    "ppe_required": [
+      "Self-Contained Breathing Apparatus (SCBA)",
+      "Structural firefighting gear"
+    ],
+    "immediate_actions": [
+      "Keep combustible materials away from oxygen source",
+      "Oxygen accelerates combustion -- even non-flammable materials may ignite",
+      "Ventilate enclosed areas",
+      "Move containers away from fire if safe"
+    ],
+    "first_aid": [
+      "Move victim away from oxygen-enriched atmosphere",
+      "Treat for burns if ignition occurred",
+      "If frostbite from liquid oxygen, warm gradually with lukewarm water"
+    ],
+    "fire_response": "Water spray or fog. Do NOT use oil-based agents near oxygen.",
+    "spill_response": "Ventilate area. Keep combustibles away. No smoking or open flames."
+  },
+  {
+    "un_number": "UN1219",
+    "chemical_name": "Isopropyl Alcohol",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 129,
+    "safe_distance_ft": 150,
+    "ppe_required": ["Safety glasses", "Nitrile gloves", "Chemical-resistant apron"],
+    "immediate_actions": [
+      "Eliminate all ignition sources within 150 feet",
+      "Ventilate area thoroughly",
+      "Prevent entry into drains or sewers",
+      "Contain spill with dry sand or absorbent material"
+    ],
+    "first_aid": [
+      "Skin contact: wash with soap and water for 15 minutes",
+      "Eye contact: flush with water for 15 minutes, seek medical attention",
+      "Inhalation: move to fresh air, oxygen if breathing difficulty",
+      "Ingestion: do NOT induce vomiting, call Poison Control"
+    ],
+    "fire_response": "Use CO2, dry chemical, or alcohol-resistant foam.",
+    "spill_response": "Absorb with inert dry material. Keep away from heat and ignition sources."
+  },
+  {
+    "un_number": "UN1001",
+    "chemical_name": "Acetylene",
+    "hazard_class": "Flammable Gas",
+    "guide_number": 116,
+    "safe_distance_ft": 300,
+    "ppe_required": ["SCBA", "Structural firefighting gear", "Thermal protection gloves"],
+    "immediate_actions": [
+      "Evacuate 300 feet in all directions",
+      "Shut off gas supply if safe to do so",
+      "Eliminate ALL ignition sources — acetylene has wide explosive range",
+      "Cool cylinders with water from maximum safe distance",
+      "Do NOT move heated or damaged cylinders"
+    ],
+    "first_aid": [
+      "Move victim to fresh air immediately",
+      "Administer oxygen if breathing difficulty",
+      "CPR if not breathing",
+      "Treat for frostbite if exposed to cold gas release"
+    ],
+    "fire_response": "Do NOT extinguish unless flow can be stopped. Cool surrounding area with water.",
+    "spill_response": "Protect surrounding buildings from blast. Isolate until gas dissipates."
+  },
+  {
+    "un_number": "UN1016",
+    "chemical_name": "Carbon Monoxide",
+    "hazard_class": "Flammable Gas, Toxic",
+    "guide_number": 119,
+    "safe_distance_ft": 500,
+    "ppe_required": ["SCBA (mandatory — CO is odorless)", "Structural firefighting gear"],
+    "immediate_actions": [
+      "SCBA required — CO is colorless and odorless, immediately life-threatening",
+      "Evacuate all personnel from the area immediately",
+      "Eliminate ignition sources",
+      "Ventilate enclosed spaces before entry"
+    ],
+    "first_aid": [
+      "Move victim to fresh air IMMEDIATELY — CO displaces oxygen in blood",
+      "Administer 100% oxygen and keep victim warm and at rest",
+      "Unconscious victim: CPR if not breathing, call for ALS",
+      "All CO exposure requires hospital evaluation for carboxyhemoglobin levels"
+    ],
+    "fire_response": "If flow cannot be stopped, do not extinguish — CO will re-accumulate. Cool containers.",
+    "spill_response": "Ventilate area. Continuous air monitoring required. CO detectors mandatory."
+  },
+  {
+    "un_number": "UN1230",
+    "chemical_name": "Methanol",
+    "hazard_class": "Flammable Liquid, Toxic",
+    "guide_number": 131,
+    "safe_distance_ft": 200,
+    "ppe_required": ["SCBA", "Chemical-resistant suit", "Nitrile gloves", "Face shield"],
+    "immediate_actions": [
+      "Eliminate all ignition sources",
+      "Evacuate non-essential personnel",
+      "Methanol vapor is invisible — use gas detector",
+      "Prevent runoff into sewers"
+    ],
+    "first_aid": [
+      "Skin: remove contaminated clothing, wash with soap and water 15 minutes",
+      "Eyes: flush with water 15 minutes, immediate medical attention",
+      "Inhalation: fresh air, oxygen, call ALS",
+      "Ingestion: call Poison Control IMMEDIATELY — methanol causes blindness and death. Do NOT induce vomiting"
+    ],
+    "fire_response": "Alcohol-resistant foam, CO2, dry chemical. Water may spread fire.",
+    "spill_response": "Contain with sand or earth. Flush area with water. Do not allow entry into waterways."
+  },
+  {
+    "un_number": "UN1170",
+    "chemical_name": "Ethanol (Ethyl Alcohol)",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 127,
+    "safe_distance_ft": 150,
+    "ppe_required": ["Safety glasses", "Nitrile gloves"],
+    "immediate_actions": [
+      "Eliminate ignition sources within 150 feet",
+      "Ventilate area",
+      "Contain spill — ethanol is water-miscible"
+    ],
+    "first_aid": [
+      "Skin: wash with water",
+      "Eyes: flush with water 15 minutes",
+      "Inhalation: fresh air",
+      "Ingestion: call Poison Control — high concentrations are toxic"
+    ],
+    "fire_response": "Alcohol-resistant foam preferred. CO2 or dry chemical acceptable.",
+    "spill_response": "Dilute with large amounts of water. Keep away from ignition sources."
+  },
+  {
+    "un_number": "UN1038",
+    "chemical_name": "Ethylene (Refrigerated Liquid)",
+    "hazard_class": "Flammable Gas, Cryogenic",
+    "guide_number": 115,
+    "safe_distance_ft": 500,
+    "ppe_required": ["SCBA", "Cryogenic gloves", "Face shield", "Thermal protection"],
+    "immediate_actions": [
+      "Evacuate 500 feet in all directions",
+      "Eliminate ALL ignition sources",
+      "Liquid ethylene boils at -104°C — cryogenic burns on contact",
+      "Do not touch liquid or frosted surfaces"
+    ],
+    "first_aid": [
+      "Cryogenic burns: gently warm with lukewarm (not hot) water",
+      "Do NOT rub frozen tissue",
+      "Immerse in warm water 40-42°C",
+      "Inhalation: fresh air, oxygen"
+    ],
+    "fire_response": "Do not extinguish unless flow can be stopped. Cool surrounding surfaces with water fog.",
+    "spill_response": "Stop leak from safe distance. Allow vapor cloud to disperse."
+  },
+  {
+    "un_number": "UN1830",
+    "chemical_name": "Sulfuric Acid",
+    "hazard_class": "Corrosive",
+    "guide_number": 137,
+    "safe_distance_ft": 300,
+    "ppe_required": ["Level B hazmat suit", "SCBA", "Acid-resistant gloves", "Face shield"],
+    "immediate_actions": [
+      "Do NOT allow water to contact concentrated sulfuric acid — violent spattering",
+      "Evacuate downwind — acid fumes are toxic",
+      "Contain spill with dry sand or lime",
+      "Neutralize with sodium bicarbonate (baking soda) only after containment"
+    ],
+    "first_aid": [
+      "Skin: remove clothing immediately, flush with LARGE amounts of water for 20 minutes",
+      "Eyes: flush with water 20-30 minutes, EMERGENCY — acid causes permanent blindness",
+      "Inhalation: fresh air, oxygen, hospital",
+      "Ingestion: do NOT induce vomiting, dilute with water or milk, hospital immediately"
+    ],
+    "fire_response": "Acid does not burn but reacts violently with water and organics. Use dry sand or earth.",
+    "spill_response": "Restrict access. Neutralize with lime or sodium bicarbonate. Do not use water directly."
+  },
+  {
+    "un_number": "UN2015",
+    "chemical_name": "Hydrogen Peroxide (Concentrated, >60%)",
+    "hazard_class": "Oxidizer, Corrosive",
+    "guide_number": 143,
+    "safe_distance_ft": 200,
+    "ppe_required": ["Face shield", "Chemical goggles", "Acid-resistant gloves", "Chemical-resistant suit"],
+    "immediate_actions": [
+      "Keep away from all combustibles — concentrated H2O2 causes spontaneous ignition",
+      "Evacuate area of all combustible materials",
+      "Do NOT allow to contact clothing, wood, leather, or organic material"
+    ],
+    "first_aid": [
+      "Skin: flush with large amounts of water for 20 minutes",
+      "Eyes: flush with water 20 minutes, immediate medical attention",
+      "Inhalation: fresh air, seek medical attention",
+      "Concentrated H2O2 causes oxygen embolism if ingested — do NOT induce vomiting, hospital immediately"
+    ],
+    "fire_response": "Cool containers with water. Flood area with water to dilute. AVOID contact with combustibles.",
+    "spill_response": "Dilute with large amounts of water. Keep away from organic material and combustibles."
+  },
+  {
+    "un_number": "UN1114",
+    "chemical_name": "Benzene",
+    "hazard_class": "Flammable Liquid, Carcinogen",
+    "guide_number": 130,
+    "safe_distance_ft": 300,
+    "ppe_required": ["SCBA", "Chemical-resistant suit", "Benzene-resistant gloves (butyl rubber)", "Face shield"],
+    "immediate_actions": [
+      "Evacuate non-essential personnel — benzene is a known carcinogen",
+      "Eliminate ignition sources within 300 feet",
+      "SCBA required — benzene vapors are toxic and carcinogenic",
+      "Prevent runoff into water sources"
+    ],
+    "first_aid": [
+      "Skin: remove contaminated clothing, wash with soap and water",
+      "Eyes: flush with water 15 minutes",
+      "Inhalation: fresh air, oxygen, hospital — benzene causes CNS depression",
+      "All exposures should receive medical evaluation for benzene toxicity"
+    ],
+    "fire_response": "Foam, CO2, dry chemical. Do not use water jet — spreads fire.",
+    "spill_response": "Contain spill. Absorb with inert material. Recover for disposal as hazardous waste."
+  },
+  {
+    "un_number": "UN1040",
+    "chemical_name": "Ethylene Oxide",
+    "hazard_class": "Flammable Gas, Toxic, Carcinogen",
+    "guide_number": 119,
+    "safe_distance_ft": 1000,
+    "ppe_required": ["Level A hazmat suit", "SCBA — EO is immediately dangerous to life and health"],
+    "immediate_actions": [
+      "EVACUATE 1000 feet immediately — ethylene oxide is highly toxic and flammable",
+      "SCBA mandatory — EO is odorless at dangerous concentrations",
+      "Eliminate ignition sources — explosive range 3-100%",
+      "Do NOT re-enter without air monitoring"
+    ],
+    "first_aid": [
+      "Move victim to fresh air IMMEDIATELY",
+      "Remove all contaminated clothing",
+      "Flush all exposed skin with water for 20 minutes",
+      "All exposures require hospital evaluation — EO is a carcinogen and causes delayed effects"
+    ],
+    "fire_response": "Alcohol-resistant foam. Water spray to knock down vapors. Do NOT enter without SCBA.",
+    "spill_response": "Isolate area. Monitor with gas detector. Allow to evaporate with maximum ventilation."
+  },
+  {
+    "un_number": "UN1049",
+    "chemical_name": "Hydrogen (Compressed)",
+    "hazard_class": "Flammable Gas",
+    "guide_number": 115,
+    "safe_distance_ft": 500,
+    "ppe_required": ["SCBA", "Structural firefighting gear"],
+    "immediate_actions": [
+      "Eliminate ALL ignition sources — hydrogen has the widest explosive range of any gas (4-75%)",
+      "Evacuate 500 feet — hydrogen flames are nearly invisible in daylight",
+      "Cool cylinders with water from maximum distance",
+      "Do NOT move heated cylinders"
+    ],
+    "first_aid": [
+      "Move to fresh air — hydrogen displaces oxygen causing asphyxiation",
+      "Treat for asphyxiation if unconscious",
+      "Treat burns if fire occurred"
+    ],
+    "fire_response": "Do NOT extinguish unless flow can be stopped — unburned hydrogen will re-accumulate explosively.",
+    "spill_response": "Isolate area. Ventilate. Use gas detector — hydrogen flames are invisible."
+  },
+  {
+    "un_number": "UN1789",
+    "chemical_name": "Hydrochloric Acid",
+    "hazard_class": "Corrosive",
+    "guide_number": 157,
+    "safe_distance_ft": 300,
+    "ppe_required": ["Level B hazmat suit", "SCBA", "Acid-resistant gloves", "Face shield"],
+    "immediate_actions": [
+      "Evacuate downwind — HCl fumes are toxic and corrosive to lungs",
+      "Do NOT breathe vapors",
+      "Contain spill — prevent entry into waterways",
+      "Neutralize with lime or soda ash only after containment"
+    ],
+    "first_aid": [
+      "Skin: remove clothing, flush with water 20 minutes",
+      "Eyes: flush with water 20 minutes — emergency",
+      "Inhalation: fresh air, oxygen, hospital — HCl causes pulmonary edema",
+      "Ingestion: dilute with water, hospital immediately"
+    ],
+    "fire_response": "HCl does not burn. Use water spray to disperse vapors. Cool containers.",
+    "spill_response": "Ventilate area. Neutralize with lime after containment. Prevent runoff."
+  },
+  {
+    "un_number": "UN3077",
+    "chemical_name": "Environmentally Hazardous Substance (Solid)",
+    "hazard_class": "Miscellaneous Hazardous Material",
+    "guide_number": 171,
+    "safe_distance_ft": 100,
+    "ppe_required": ["Nitrile gloves", "Safety glasses", "Dust mask"],
+    "immediate_actions": [
+      "Prevent material from entering waterways, storm drains, or soil",
+      "Contain spill with dry material",
+      "Identify specific substance if possible — hazards vary widely"
+    ],
+    "first_aid": [
+      "Avoid skin contact",
+      "Wash exposed areas with soap and water",
+      "If ingestion or inhalation, identify substance and call Poison Control"
+    ],
+    "fire_response": "Respond based on specific substance properties. Use water unless contraindicated.",
+    "spill_response": "Contain and prevent environmental spread. Contact hazmat team for cleanup."
+  },
+  {
+    "un_number": "UN1267",
+    "chemical_name": "Petroleum Crude Oil",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 128,
+    "safe_distance_ft": 300,
+    "ppe_required": ["SCBA", "Chemical-resistant suit", "Nitrile gloves"],
+    "immediate_actions": [
+      "Eliminate all ignition sources within 300 feet",
+      "Evacuate downwind — crude oil vapors are toxic",
+      "Contain large spills — crude is an environmental hazard",
+      "Do not allow entry into storm drains"
+    ],
+    "first_aid": [
+      "Skin: remove clothing, wash with soap and water",
+      "Eyes: flush with water 15 minutes",
+      "Inhalation: fresh air, oxygen if breathing difficulty",
+      "All inhalation exposures require medical evaluation"
+    ],
+    "fire_response": "Foam, dry chemical. Cool surrounding tanks with water. Do not use water jet on spill.",
+    "spill_response": "Contain with berms. Recover product for disposal. Environmental notification required."
+  },
+  {
+    "un_number": "UN1744",
+    "chemical_name": "Bromine",
+    "hazard_class": "Toxic, Corrosive",
+    "guide_number": 154,
+    "safe_distance_ft": 1000,
+    "ppe_required": ["Level A hazmat suit", "SCBA — bromine is immediately dangerous to life"],
+    "immediate_actions": [
+      "EVACUATE 1000 feet — bromine vapor is extremely toxic (IDLH: 3 ppm)",
+      "SCBA mandatory",
+      "Move upwind and uphill",
+      "Notify hazmat team immediately"
+    ],
+    "first_aid": [
+      "Move to fresh air immediately",
+      "Remove ALL contaminated clothing",
+      "Flush skin with large amounts of water for 20 minutes",
+      "Eyes: flush with water 20 minutes — bromine causes severe burns",
+      "All exposures require hospital evaluation"
+    ],
+    "fire_response": "Bromine is not flammable but supports combustion. Water spray to suppress vapors.",
+    "spill_response": "Do NOT attempt cleanup without Level A protection. Contain and notify hazmat."
+  },
+  {
+    "un_number": "UN1648",
+    "chemical_name": "Acetonitrile",
+    "hazard_class": "Flammable Liquid, Toxic",
+    "guide_number": 127,
+    "safe_distance_ft": 200,
+    "ppe_required": ["SCBA", "Chemical-resistant suit", "Nitrile gloves"],
+    "immediate_actions": [
+      "Eliminate ignition sources",
+      "Evacuate area — acetonitrile metabolizes to cyanide in the body",
+      "SCBA required — vapors are toxic",
+      "Prevent spill from entering waterways"
+    ],
+    "first_aid": [
+      "Skin: remove clothing, wash with soap and water",
+      "Inhalation: fresh air, oxygen, hospital — risk of cyanide poisoning",
+      "Eyes: flush 15 minutes",
+      "All exposures require hospital evaluation due to cyanide risk"
+    ],
+    "fire_response": "Alcohol-resistant foam, CO2, dry chemical.",
+    "spill_response": "Contain. Ventilate area. Recover with inert absorbent."
+  },
+  {
+    "un_number": "UN1090",
+    "chemical_name": "Acetone",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 127,
+    "safe_distance_ft": 150,
+    "ppe_required": ["Safety glasses", "Nitrile gloves"],
+    "immediate_actions": [
+      "Eliminate ignition sources — acetone has very low flash point (-18°C)",
+      "Ventilate area thoroughly",
+      "Contain spill with dry sand or absorbent material"
+    ],
+    "first_aid": [
+      "Skin: wash with soap and water",
+      "Eyes: flush with water 15 minutes",
+      "Inhalation: fresh air — high concentrations cause CNS depression",
+      "Ingestion: do NOT induce vomiting, call Poison Control"
+    ],
+    "fire_response": "Alcohol-resistant foam, CO2, dry chemical.",
+    "spill_response": "Remove ignition sources. Absorb with inert material. Ventilate area."
+  },
+  {
+    "un_number": "UN1145",
+    "chemical_name": "Cyclohexane",
+    "hazard_class": "Flammable Liquid",
+    "guide_number": 128,
+    "safe_distance_ft": 200,
+    "ppe_required": ["SCBA", "Chemical-resistant suit", "Nitrile gloves"],
+    "immediate_actions": [
+      "Eliminate ignition sources",
+      "Evacuate downwind",
+      "Prevent vapor accumulation in low areas",
+      "Contain spill"
+    ],
+    "first_aid": [
+      "Skin: wash with soap and water",
+      "Eyes: flush with water 15 minutes",
+      "Inhalation: fresh air, oxygen if needed",
+      "All inhalation exposures should be medically evaluated"
+    ],
+    "fire_response": "Foam, CO2, dry chemical. Do not use water jet.",
+    "spill_response": "Absorb with inert material. Prevent entry into drains."
+  }
+]
